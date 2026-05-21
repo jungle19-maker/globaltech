@@ -52,18 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburger.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             hamburger.classList.toggle('open');
-            
-            // Basic animation for hamburger lines
-            const bars = hamburger.querySelectorAll('.bar');
-            if (hamburger.classList.contains('open')) {
-                bars[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
-                bars[1].style.opacity = '0';
-                bars[2].style.transform = 'rotate(45deg) translate(-5px, -6px)';
-            } else {
-                bars[0].style.transform = 'none';
-                bars[1].style.opacity = '1';
-                bars[2].style.transform = 'none';
-            }
+            document.body.classList.toggle('menu-open');
         });
 
         // Close menu when clicking a link
@@ -71,9 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
                 hamburger.classList.remove('open');
-                const bars = hamburger.querySelectorAll('.bar');
-                bars.forEach(bar => bar.style.transform = 'none');
-                bars[1].style.opacity = '1';
+                document.body.classList.remove('menu-open');
             });
         });
     }
