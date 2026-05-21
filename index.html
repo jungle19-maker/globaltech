@@ -3,37 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Globotech Talent Hub Pvt. Ltd. | Premium Industrial Manpower</title>
-    <meta name="description" content="Globotech Talent Hub Pvt. Ltd. - MEA Registered Company. Industrial Training, Recruitment, Staffing & Overseas Placement.">
+    <title>Globotech Talent Hub Pvt. Ltd. | Premium Industrial Manpower & Recruitment</title>
+    <meta name="description" content="Globotech Talent Hub Pvt. Ltd. is an MEA Registered Company offering certified industrial training, recruitment, staffing, and global overseas placement solutions.">
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Top Bar for Credentials -->
+
+    <!-- ==========================================================================
+         Preloader Overlay
+         ========================================================================== -->
+    <div id="preloader">
+        <div class="loader-gear-wrapper">
+            <i class="fas fa-cog loader-gear"></i>
+            <div class="loader-inner-circle"></div>
+        </div>
+        <div class="loader-text">Globotech Talent Hub</div>
+    </div>
+
+    <!-- ==========================================================================
+         Top Bar Credentials Header
+         ========================================================================== -->
     <div class="top-bar">
-        <div class="top-bar-container">
-            <span><strong>CIN:</strong> U78100UP2025PTC223352</span>
-            <span><strong>GSTIN:</strong> 09AAMCG0332J1ZK</span>
-            <span><strong>MSME Reg:</strong> UP47 0039356</span>
-            <span><strong>Shop Est:</strong> UPSA60714044</span>
+        <div class="top-bar-marquee">
+            <div class="marquee-content">
+                <span><i class="fas fa-id-card"></i> <strong>CIN:</strong> U78100UP2025PTC223352</span>
+                <span><i class="fas fa-receipt"></i> <strong>GSTIN:</strong> 09AAMCG0332J1ZK</span>
+                <span><i class="fas fa-award"></i> <strong>MSME Reg:</strong> UP47 0039356</span>
+                <span><i class="fas fa-store"></i> <strong>Shop Est:</strong> UPSA60714044</span>
+                <!-- Duplicate for seamless scroll loop -->
+                <span><i class="fas fa-id-card"></i> <strong>CIN:</strong> U78100UP2025PTC223352</span>
+                <span><i class="fas fa-receipt"></i> <strong>GSTIN:</strong> 09AAMCG0332J1ZK</span>
+                <span><i class="fas fa-award"></i> <strong>MSME Reg:</strong> UP47 0039356</span>
+                <span><i class="fas fa-store"></i> <strong>Shop Est:</strong> UPSA60714044</span>
+            </div>
         </div>
     </div>
 
-    <!-- Navbar -->
+    <!-- ==========================================================================
+         Sticky Navigation Header
+         ========================================================================== -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="logo">
+            <a href="#" class="logo" aria-label="Globotech Talent Hub Home">
                 <img src="logo.png" alt="Globotech Talent Hub Logo" class="logo-img">
             </a>
+            
             <div class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
                 <a href="#training">Training</a>
+                <a href="#infrastructure">Facilities</a>
+                <a href="#leadership">Leadership</a>
                 <a href="#gallery">Gallery</a>
+
                 <a href="#contact" class="nav-cta">Contact Us</a>
             </div>
-            <div class="hamburger">
+            
+            <div class="hamburger" aria-label="Toggle navigation menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -41,233 +73,557 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ==========================================================================
+         Futuristic Hero Section with Parallax Background
+         ========================================================================== -->
     <header class="hero" id="home">
         <div class="hero-overlay"></div>
+        
         <div class="hero-content">
             <div class="trust-badge">
                 <span class="pulse"></span>
-                MEA Registered Company
+                <i class="fas fa-passport" style="margin-right: 8px; color: var(--primary-orange);"></i> MEA Registered Company
             </div>
-            <h1>Empowering Skills,<br><span>Shaping Futures</span></h1>
-            <p class="hero-tagline">Premium Industrial Manpower, Training & Overseas Placement</p>
+            <h1>Global Industry<br><span>Quality Projects</span><br>Expert Workers</h1>
+            <p class="hero-tagline">Bridging the gap between elite global technical talent and premier engineering enterprises.</p>
+            
             <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary">Apply for Jobs</a>
-                <a href="#contact" class="btn btn-secondary">Hire Skilled Workforce</a>
+                <a href="#services" class="btn btn-primary">Our Services</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
+        
+        <!-- Hero Section Dynamic Stats Counters -->
         <div class="hero-stats">
             <div class="stat-item">
-                <span class="stat-number" data-target="5000">0</span>
+                <i class="fas fa-users-gear stat-icon"></i>
+                <span class="stat-number">5000+</span>
                 <span class="stat-label">Candidates Placed</span>
             </div>
             <div class="stat-item">
-                <span class="stat-number" data-target="15">0</span>
+                <i class="fas fa-globe-asia stat-icon"></i>
+                <span class="stat-number">15+</span>
                 <span class="stat-label">Countries Served</span>
             </div>
             <div class="stat-item">
-                <span class="stat-number" data-target="50">0</span>
+                <i class="fas fa-building-shield stat-icon"></i>
+                <span class="stat-number">50+</span>
                 <span class="stat-label">Corporate Clients</span>
             </div>
         </div>
+
+        <!-- Slider Navigation Controls -->
+        <div class="hero-slider-arrows">
+            <button class="slider-arrow prev" aria-label="Previous slide">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            <button class="slider-arrow next" aria-label="Next slide">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
     </header>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="section-container">
+    <!-- ==========================================================================
+         Floating Glassmorphism Action Cards (Hero Border)
+         ========================================================================== -->
+    <section class="floating-hero-cards">
+        <div class="floating-cards-grid">
+            <!-- Floating Card 1 -->
+            <div class="floating-card">
+                <i class="fas fa-users-cog floating-card-icon"></i>
+                <h3>Personalized Solutions</h3>
+                <p>Delivering custom manpower matching models configured for high-efficiency technical operations globally.</p>
+            </div>
+            <!-- Floating Card 2 -->
+            <div class="floating-card">
+                <i class="fas fa-leaf floating-card-icon"></i>
+                <h3>Environmental Sensitivity</h3>
+                <p>Prioritizing sustainable safety measures, regulatory green compliance, and incident-free worksites.</p>
+            </div>
+            <!-- Floating Card 3 -->
+            <div class="floating-card">
+                <i class="fas fa-industry floating-card-icon"></i>
+                <h3>Industrial Excellence</h3>
+                <p>Nurturing professional technical competencies that comply with top international industrial standards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Company Section (Interactive Two-Column)
+         ========================================================================== -->
+    <section class="about fade-in-section" id="about">
+        <div class="section-container grid-2">
+            
+            <!-- Left Info Block -->
             <div class="about-text">
+                <span class="about-subtitle">01. Who We Are</span>
                 <h2 class="section-title">About <span>Globotech</span></h2>
-                <p>Located in Kushinagar, Uttar Pradesh, Globotech Talent Hub Pvt. Ltd. is a premier MEA Registered Company specializing in Skill Development, Industrial Training, and Overseas Placement.</p>
+                <p>Located in Kushinagar, Uttar Pradesh, Globotech Talent Hub Pvt. Ltd. is a premier MEA Registered Company specializing in Skill Development, certified Industrial Training, and ethical Overseas Placement.</p>
+                
+                <ul class="about-checklist">
+                    <li><i class="fas fa-passport about-check-icon"></i> Ministry of External Affairs (MEA) Registered Standard Vetting</li>
+                    <li><i class="fas fa-flask-vial about-check-icon"></i> State-of-the-Art Practical Skill Assessment Labs</li>
+                    <li><i class="fas fa-network-wired about-check-icon"></i> Seamless Global Corporate Network and Recruitment</li>
+                </ul>
+
                 <div class="mission-vision">
                     <div class="mv-card">
-                        <div class="mv-icon">🎯</div>
+                        <i class="fas fa-bullseye mv-icon"></i>
                         <h3>Our Mission</h3>
                         <p>To bridge the gap between skilled workforce and global industry requirements through quality training and ethical recruitment.</p>
                     </div>
                     <div class="mv-card">
-                        <div class="mv-icon">👁️</div>
+                        <i class="fas fa-compass mv-icon"></i>
                         <h3>Our Vision</h3>
                         <p>To be the most trusted global partner for industrial workforce solutions and skill empowerment.</p>
                     </div>
                 </div>
-                <!-- Company Registration Details -->
+
+                <!-- Registration Credentials Card -->
                 <div class="company-credentials">
                     <div class="credential-item">
-                        <span class="cred-label">CIN</span>
+                        <span class="cred-label"><i class="fas fa-id-card"></i> CIN</span>
                         <span class="cred-value">U78100UP2025PTC223352</span>
                     </div>
                     <div class="credential-item">
-                        <span class="cred-label">GSTIN</span>
+                        <span class="cred-label"><i class="fas fa-receipt"></i> GSTIN</span>
                         <span class="cred-value">09AAMCG0332J1ZK</span>
                     </div>
                     <div class="credential-item">
-                        <span class="cred-label">MSME Reg.</span>
+                        <span class="cred-label"><i class="fas fa-award"></i> MSME Reg.</span>
                         <span class="cred-value">UP47 0039356</span>
                     </div>
                     <div class="credential-item">
-                        <span class="cred-label">Shop Est.</span>
+                        <span class="cred-label"><i class="fas fa-store"></i> Shop Est.</span>
                         <span class="cred-value">UPSA60714044</span>
                     </div>
                 </div>
             </div>
+            
+            <!-- Right Graphic Visual Block -->
+            <div class="about-visual">
+                <!-- Styled World Map Overlay Vector background -->
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="World Map Background" class="about-map-img">
+                
+                <div class="about-img-frame">
+                    <img src="training_workshop.png" alt="Industrial Training Worksite">
+                </div>
+                
+                <!-- Circular Rotating Badge -->
+                <div class="rotating-badge-container">
+                    <svg viewBox="0 0 100 100" class="rotating-badge-svg">
+                        <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none"></path>
+                        <circle cx="50" cy="50" r="30" class="rotating-badge-circle"></circle>
+                        <text class="rotating-badge-text">
+                            <textPath href="#circlePath">Globotech Excellence • 100% Quality •</textPath>
+                        </text>
+                    </svg>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
+    <!-- ==========================================================================
+         Services Section (Grid Cards)
+         ========================================================================== -->
+    <section class="services fade-in-section" id="services">
         <div class="section-container">
             <h2 class="section-title text-center">Our <span>Services</span></h2>
+            
             <div class="services-grid">
+                <!-- Service 1 -->
                 <div class="service-card">
-                    <div class="service-icon">🏭</div>
+                    <i class="fas fa-cogs service-icon"></i>
                     <h3>Industrial Training</h3>
-                    <p>Comprehensive practical training on modern industrial equipment.</p>
+                    <p>Comprehensive practical training on modern industrial welding, steel fabricating, piping, and plant operations.</p>
+                    <a href="#training" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- Service 2 -->
                 <div class="service-card">
-                    <div class="service-icon">✈️</div>
-                    <h3>OverseAS Placement</h3>
-                    <p>Ethical recruitment for international EPC and Oil & Gas projects.</p>
+                    <i class="fas fa-plane-departure service-icon"></i>
+                    <h3>Overseas Placement</h3>
+                    <p>Fully compliant, ethical manpower deployment for international infrastructure, EPC, and Oil & Gas projects.</p>
+                    <a href="#contact" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- Service 3 -->
                 <div class="service-card">
-                    <div class="service-icon">🤝</div>
+                    <i class="fas fa-handshake service-icon"></i>
                     <h3>Domestic Recruitment</h3>
-                    <p>Providing skilled workforce for Indian infrastructure projects.</p>
+                    <p>Providing high-caliber skilled and semi-skilled workforce solutions to major engineering enterprises across India.</p>
+                    <a href="#contact" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
                 </div>
+                <!-- Service 4 -->
                 <div class="service-card">
-                    <div class="service-icon">🛡️</div>
+                    <i class="fas fa-shield-alt service-icon"></i>
                     <h3>Fire & Safety Training</h3>
-                    <p>International standard safety management programs.</p>
+                    <p>International standard safety programs, PPE training sessions, and certified ADIS/NEBOSH instruction courses.</p>
+                    <a href="#training" class="explore-btn">Explore More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Training Programs -->
-    <section class="training" id="training">
+    <!-- ==========================================================================
+         Dark Industrial Feature Section (Collage & Accordions)
+         ========================================================================== -->
+    <section class="industrial-features fade-in-section" id="features">
+        <!-- Canvas for Dynamic Rising Orange Particles background -->
+        <div id="particles-js" class="particles-container"></div>
+
+        <div class="section-container grid-2">
+            
+            <!-- Left Side Accordion details -->
+            <div class="accordion-panel">
+                <span class="about-subtitle" style="color: var(--primary-orange);">02. Why Partner With Us</span>
+                <h2 class="section-title">Futuristic Vetting <br><span>Operational Rigor</span></h2>
+                
+                <div class="feature-accordion">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item">
+                        <div class="accordion-lead">
+                            <span class="accordion-num">01/</span>
+                            <i class="fas fa-clipboard-check accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <h3>Quality Control System</h3>
+                            <p>We deploy rigorous mechanical, structural, and safety audits at every stage of manpower training to guarantee high worksite output.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item">
+                        <div class="accordion-lead">
+                            <span class="accordion-num">02/</span>
+                            <i class="fas fa-gauge-high accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <h3>Accurate Testing Process</h3>
+                            <p>Every candidate undergoes strict trade assessment and simulation examinations on live electrical, welding, and AutoCAD systems.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item">
+                        <div class="accordion-lead">
+                            <span class="accordion-num">03/</span>
+                            <i class="fas fa-chalkboard-user accordion-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <h3>Highly Professional Staff</h3>
+                            <p>Our instructors and placement managers are industry veterans with extensive EPC and overseas logistical expertise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Side Collage image bordered with glow -->
+            <div class="collage-container">
+                <div class="collage-inner">
+                    <img src="training_workshop.png" alt="Globotech Training Facility Collage" class="collage-img">
+                </div>
+                <div class="floating-orange-badge">MEA APPROVED</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Training Programs Categories Block
+         ========================================================================== -->
+    <section class="training fade-in-section" id="training">
         <div class="section-container">
             <h2 class="section-title text-center">Training <span>Programs</span></h2>
+            
             <div class="training-categories">
+                <!-- Training 1 -->
                 <div class="training-category">
-                    <h3>Industrial Trades</h3>
+                    <div class="category-header">
+                        <i class="fas fa-helmet-safety category-icon"></i>
+                        <h3>Industrial Trades</h3>
+                    </div>
                     <ul>
-                        <li>Welding (TIG/MIG/ARC)</li>
-                        <li>Pipe Fitter & Fabricator</li>
-                        <li>Industrial Electrician</li>
-                        <li>Scaffolder & Rigger</li>
-                        <li>Heavy Equipment Operator</li>
+                        <li><i class="fas fa-fire list-item-icon"></i> Welding (TIG / MIG / ARC)</li>
+                        <li><i class="fas fa-wrench list-item-icon"></i> Pipe Fitter & Fabricator</li>
+                        <li><i class="fas fa-bolt-lightning list-item-icon"></i> Industrial Electrician</li>
+                        <li><i class="fas fa-bars-staggered list-item-icon"></i> Scaffolder & Rigger</li>
+                        <li><i class="fas fa-truck-pickup list-item-icon"></i> Heavy Equipment Operator</li>
                     </ul>
                 </div>
+                <!-- Training 2 -->
                 <div class="training-category">
-                    <h3>Safety & Quality</h3>
+                    <div class="category-header">
+                        <i class="fas fa-shield-halved category-icon"></i>
+                        <h3>Safety & Quality</h3>
+                    </div>
                     <ul>
-                        <li>NEBOSH / IOSH</li>
-                        <li>ADIS Safety Program</li>
-                        <li>NDT Level II</li>
-                        <li>ISO 9001 Awareness</li>
+                        <li><i class="fas fa-certificate list-item-icon"></i> NEBOSH / IOSH</li>
+                        <li><i class="fas fa-user-shield list-item-icon"></i> ADIS Safety Program</li>
+                        <li><i class="fas fa-gauge-high list-item-icon"></i> NDT Level II Vetting</li>
+                        <li><i class="fas fa-file-contract list-item-icon"></i> ISO 9001 Awareness</li>
                     </ul>
                 </div>
+                <!-- Training 3 -->
                 <div class="training-category">
-                    <h3>Computer Skills</h3>
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code category-icon"></i>
+                        <h3>Technical Skills</h3>
+                    </div>
                     <ul>
-                        <li>AutoCAD Drafting</li>
-                        <li>Document Controller</li>
-                        <li>Advanced MS Office</li>
-                        <li>Data Entry Operations</li>
+                        <li><i class="fas fa-drafting-compass list-item-icon"></i> AutoCAD Drafting & Modelling</li>
+                        <li><i class="fas fa-folder-open list-item-icon"></i> Document Controller Training</li>
+                        <li><i class="fas fa-file-excel list-item-icon"></i> Advanced MS Office Suite</li>
+                        <li><i class="fas fa-boxes-stacked list-item-icon"></i> Industrial Site Logistics</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Our Expertise Section (Inspired by Manpower) -->
-    <section class="expertise" id="expertise">
+    <!-- ==========================================================================
+         Our Expertise Section (Inspired by Global Manpower Hubs)
+         ========================================================================== -->
+    <section class="expertise fade-in-section" id="expertise">
         <div class="section-container grid-2">
+            
             <div class="expertise-content">
                 <h2 class="section-title">Our <span>Expertise</span></h2>
-                <p>Inspired by global industry standards, we build connected workforce solutions that empower enterprise clients to meet complex project needs. Whether you require temporary staffing, permanent recruitment, or compliance services, we deliver tailored solutions.</p>
-                <ul class="expertise-list">
-                    <li><strong>Skilled Talent Pools:</strong> We target and develop deep expertise in specialist talent markets globally.</li>
-                    <li><strong>Compliance Services:</strong> Navigating recruitment compliance with MEA registered standards.</li>
-                    <li><strong>Contract & Permanent:</strong> Flexible staffing solutions for short-term and long-term business goals.</li>
-                    <li><strong>Payroll Outsourcing:</strong> Seamless management of your workforce logistics.</li>
+                <p>We build connected workforce networks that enable enterprise clients to adapt seamlessly to shifting project scopes. From individual temporary placements to multi-disciplinary industrial contract crews, we deliver recruitment integrity.</p>
+                <ul class="expertise-list" style="list-style: none;">
+                    <li><i class="fas fa-users-gear expertise-check-icon"></i> <strong>Specialist Talent Pools:</strong> Vetted pipeline matching specialist engineering skills.</li>
+                    <li><i class="fas fa-building-shield expertise-check-icon"></i> <strong>Regulatory Alignment:</strong> Fully registered under Ministry of External Affairs standards.</li>
+                    <li><i class="fas fa-passport expertise-check-icon"></i> <strong>Global Placement Logistics:</strong> Comprehensive support covering visas, ticketing, and compliance.</li>
                 </ul>
             </div>
+            
             <div class="expertise-stats">
                 <div class="exp-card">
+                    <i class="fas fa-arrows-spin exp-card-icon"></i>
                     <h3>End-to-End</h3>
-                    <p>Workforce Solutions</p>
+                    <p>Enterprise Manpower Logistics</p>
                 </div>
                 <div class="exp-card">
+                    <i class="fas fa-earth-asia exp-card-icon"></i>
                     <h3>Global</h3>
-                    <p>Reach & Placements</p>
+                    <p>Recruitment Infrastructure</p>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Industries Section -->
-    <section class="industries" id="industries">
+    <!-- ==========================================================================
+         Industries We Serve Row Grid
+         ========================================================================== -->
+    <section class="industries fade-in-section" id="industries">
         <div class="section-container">
             <h2 class="section-title text-center">Industries We <span>Serve</span></h2>
+            
             <div class="industries-grid">
-                <div class="industry-card">Oil & Gas</div>
-                <div class="industry-card">Construction & EPC</div>
-                <div class="industry-card">Manufacturing & Industrials</div>
-                <div class="industry-card">Energy & Renewables</div>
-                <div class="industry-card">Logistics & Supply Chain</div>
-                <div class="industry-card">Real Estate & Infrastructure</div>
-                <div class="industry-card">IT & ITES</div>
-                <div class="industry-card">Pharma & Healthcare</div>
+                <div class="industry-card"><i class="fas fa-fire-flame-simple"></i>Oil & Gas</div>
+                <div class="industry-card"><i class="fas fa-helmet-safety"></i>Construction & EPC</div>
+                <div class="industry-card"><i class="fas fa-industry"></i>Manufacturing & Plant</div>
+                <div class="industry-card"><i class="fas fa-solar-panel"></i>Energy & Renewables</div>
+                <div class="industry-card"><i class="fas fa-truck-ramp-box"></i>Logistics & Supply</div>
+                <div class="industry-card"><i class="fas fa-city"></i>Real Estate & Infra</div>
+                <div class="industry-card"><i class="fas fa-laptop-code"></i>IT & Automation</div>
+                <div class="industry-card"><i class="fas fa-flask-vial"></i>Pharma & Chemical</div>
             </div>
         </div>
     </section>
 
-    <!-- Infrastructure & Facilities Section (Extracted from PDF) -->
-    <section class="infra-details" id="infrastructure">
+    <!-- ==========================================================================
+         Infrastructure Facilities List
+         ========================================================================== -->
+    <section class="infra-details fade-in-section" id="infrastructure">
         <div class="section-container">
             <h2 class="section-title text-center">Infrastructure & <span>Facilities</span></h2>
-            <p style="text-align: center; max-width: 800px; margin: -2rem auto 3rem auto; opacity: 0.8;">
+            <p style="text-align: center; max-width: 800px; margin: -2rem auto 3.5rem auto; opacity: 0.75; font-size: 1.05rem;">
                 At Globotech Talent Hub Pvt. Ltd., we provide a modern, industry-oriented training environment designed to deliver practical exposure and real-world technical competency.
             </p>
+            
             <div class="infra-details-grid">
+                <!-- Facility 1 -->
                 <div class="infra-details-card">
-                    <div class="infra-card-icon">⚡</div>
+                    <i class="fas fa-fire-burner infra-card-icon"></i>
                     <h3>Welding Training Centre</h3>
-                    <p>Dedicated center with 10 individual welding booths equipped for SMAW, MIG, and TIG welding alongside modern grinding and cutting tools.</p>
+                    <p>Equipped with 10 individual welding booths supporting SMAW, MIG, and TIG welding alongside modern cutting, grinding, and pipe prep stations.</p>
                 </div>
+                <!-- Facility 2 -->
                 <div class="infra-details-card">
-                    <div class="infra-card-icon">🧱</div>
+                    <i class="fas fa-trowel-bricks infra-card-icon"></i>
                     <h3>Civil Mason & Steel Lab</h3>
-                    <p>Practical workspace for masonry, steel fixing (structural reinforcing), shuttering, and carpentry with industrial-grade setups.</p>
+                    <p>Dedicated zones for masonry works, reinforcing steel fixing, Shuttering carpentry mockups, and real-scale structural framing.</p>
                 </div>
+                <!-- Facility 3 -->
                 <div class="infra-details-card">
-                    <div class="infra-card-icon">🔧</div>
+                    <i class="fas fa-screwdriver-wrench infra-card-icon"></i>
                     <h3>Electrician & Plumber Lab</h3>
-                    <p>Equipped with professional electrician and plumbing demonstration systems for live mockups and circuit wiring operations.</p>
+                    <p>Industrial testing boards, live mockup power setups, circuit wiring assemblies, and domestic/commercial plumbing testing rigs.</p>
                 </div>
+                <!-- Facility 4 -->
                 <div class="infra-details-card">
-                    <div class="infra-card-icon">💻</div>
+                    <i class="fas fa-desktop infra-card-icon"></i>
                     <h3>Computer Lab & Smart Class</h3>
-                    <p>Smart digital training classrooms with interactive system supports, paired with a modern PC lab for AutoCAD drafting and digital training.</p>
+                    <p>High-speed computer labs for AutoCAD drafting and technical documentation controller training, paired with digital classrooms.</p>
                 </div>
+                <!-- Facility 5 -->
                 <div class="infra-details-card">
-                    <div class="infra-card-icon">🦺</div>
+                    <i class="fas fa-shield-halved infra-card-icon"></i>
                     <h3>Fire & Safety Centre</h3>
-                    <p>Supports ADIS, NEBOSH, and general industrial safety courses with PPE demonstrations and real-world hazard simulation training.</p>
+                    <p>Comprehensive display of industrial safety gear, safety harness test rigs, hazard mockups, and live fire response zones.</p>
                 </div>
+                <!-- Facility 6 -->
                 <div class="infra-details-card">
-                    <div class="infra-card-icon">🏢</div>
-                    <h3>Support Facilities</h3>
-                    <p>Includes a dedicated machine shop, technical training demonstration areas, placement counseling cells, and administrative block.</p>
+                    <i class="fas fa-building-user infra-card-icon"></i>
+                    <h3>Administrative Support</h3>
+                    <p>Dedicated machine shop floor, placement guidance and ticketing support cells, administrative chambers, and counseling block.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Photo Gallery Section -->
-    <section class="gallery" id="gallery">
+    <!-- ==========================================================================
+         Upgraded Glassmorphism Leadership Section
+         ========================================================================== -->
+    <section class="leadership fade-in-section" id="leadership">
+        <!-- Background shapes for glass depth -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+
+        <div class="section-container">
+            <h2 class="section-title text-center">Leadership <span>Message</span></h2>
+            
+            <div class="leadership-grid">
+                <!-- Row 1: Execs with quotes -->
+                <div class="leadership-exec-row">
+                    <!-- Leader Card 1 -->
+                    <div class="leader-card glass-card with-message">
+                        <div class="leader-image-wrapper">
+                            <img src="supriya_portrait.jpg" alt="Supriya Singh" class="leader-img">
+                        </div>
+                        <div class="leader-info">
+                            <h3>Mrs. Supriya Singh</h3>
+                            <p class="qualification">B.E. Mechanical | Ex. Project Manager – ABB India Limited</p>
+                            <p class="designation">Managing Director</p>
+                        </div>
+                        <blockquote class="leader-message">
+                            <div class="leader-message-wrapper">
+                                "With more than 20 years of industry experience, my journey started as a Mechanical Engineer with strong determination, continuous learning, and a vision to create meaningful impact. Throughout my professional career, I had the opportunity to work across Production Planning, Digital Transformation, SAP, Data Analytics, Smart Factory Initiatives, and global improvement projects with leading organizations and international platforms.
+                                <br><br>
+                                Along this journey, I realized one important truth — success becomes truly meaningful when we use our knowledge and experience to create opportunities for others.
+                                <br><br>
+                                “At Globotech Talent Hub Pvt. Ltd., we believe that skill development is the foundation of employment, industrial growth, and national progress. Our vision is to create a strong platform where talented individuals can gain practical knowledge, professional training, and meaningful career opportunities both in India and overseas.
+                                <br><br>
+                                At Globotech, we are not only building careers — we are shaping futures, empowering youth, and contributing to the growth of industries through dedicated skill development and manpower support services.
+                                <br><br>
+                                And as a Managing Director, my responsibility is not just to run an organization, but to become a bridge between talent and opportunity.”
+                                <br><br>
+                                “Globotech is not just a training institute… it is a launchpad for every individual who dares to dream bigger.
+                                <br><br>
+                                We look forward to creating long-term partnerships with industries, organizations, and aspiring professionals across the globe.”
+                            </div>
+                            <button class="view-more-btn" onclick="toggleLeaderMessage(this)">
+                                <span>Read Full Message</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </blockquote>
+                    </div>
+
+                    <!-- Leader Card 2 -->
+                    <div class="leader-card glass-card with-message">
+                        <div class="leader-image-wrapper">
+                            <img src="vikas_portrait.jpg" alt="Vikas Kumar Mall" class="leader-img">
+                        </div>
+                        <div class="leader-info">
+                            <h3>Mr. Vikas Kumar Mall</h3>
+                            <p class="qualification">B.Tech Mechanical</p>
+                            <p class="designation">Business Unit Manager</p>
+                        </div>
+                        <blockquote class="leader-message">
+                            <div class="leader-message-wrapper">
+                                “With more than 20 years of industry experience across piping, fabrication, Oil & Gas, construction, MEP, quality control, welding engineering, and industrial operations, I have closely observed one important reality — India has immense talent, but many skilled individuals still lack the right guidance, practical training, and employment opportunities.
+                                <br><br>
+                                At Globotech Talent Hub Pvt. Ltd., our mission is to bridge this gap by developing industry-ready professionals through practical skill training, technical excellence, safety awareness, and career-focused development programs.
+                                <br><br>
+                                We are committed to creating a platform where youth can gain not only technical knowledge, but also confidence, discipline, and professional growth. Our focus is to prepare skilled manpower that meets both Indian and international industry standards while supporting organizations with reliable workforce solutions.”
+                            </div>
+                            <button class="view-more-btn" onclick="toggleLeaderMessage(this)">
+                                <span>Read Full Message</span> <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Row 2: Managers with no quotes in one clean row -->
+                <div class="leadership-mgr-row">
+                    <!-- Leader Card 3 -->
+                    <div class="leader-card glass-card no-message">
+                        <div class="leader-image-wrapper">
+                            <img src="sudheer_portrait.jpg" alt="Sudheer Singh" class="leader-img">
+                        </div>
+                        <div class="leader-info">
+                            <h3>Sudheer Singh</h3>
+                            <p class="designation">Manager Engineering and Design</p>
+                        </div>
+                    </div>
+
+                    <!-- Leader Card 4 -->
+                    <div class="leader-card glass-card no-message">
+                        <div class="leader-image-wrapper">
+                            <img src="pradeep_portrait.jpg" alt="Pradeep Tiwari" class="leader-img">
+                        </div>
+                        <div class="leader-info">
+                            <h3>Pradeep Tiwari</h3>
+                            <p class="designation">Operations Manager</p>
+                        </div>
+                    </div>
+
+                    <!-- Leader Card 5 -->
+                    <div class="leader-card glass-card no-message">
+                        <div class="leader-image-wrapper">
+                            <img src="sohan_portrait.jpg" alt="Sohan Prajapati" class="leader-img">
+                        </div>
+                        <div class="leader-info">
+                            <h3>Sohan Prajapati</h3>
+                            <p class="designation">Training and Admin Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Animated Glowing Social Media Connect -->
+            <div class="leadership-social">
+                <h3>Connect With Our Network</h3>
+                <div class="social-icons-row">
+                    <a href="https://whatsapp.com/channel/0029VbCcdwQ29754SeNYzi1p" target="_blank" rel="noopener" class="social-icon whatsapp" aria-label="Connect on WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/16qEwiYzCc/" target="_blank" rel="noopener" class="social-icon facebook" aria-label="Follow on Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/globotech-talent-hub-private-limited-4416ba409" target="_blank" rel="noopener" class="social-icon linkedin" aria-label="Connect on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/globotech_talent_hub_pvt_ltd" target="_blank" rel="noopener" class="social-icon instagram" aria-label="Follow on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/GlobotechTalent" target="_blank" rel="noopener" class="social-icon twitter" aria-label="Follow on X (Twitter)">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://youtube.com/@globotechtalenthubpvtltd" target="_blank" rel="noopener" class="social-icon youtube" aria-label="Subscribe on YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Photo Gallery Showcase Section
+         ========================================================================== -->
+    <section class="gallery fade-in-section" id="gallery">
         <div class="section-container">
             <h2 class="section-title text-center">Infrastructure & <span>Gallery</span></h2>
+            
             <div class="gallery-grid">
                 <img src="training_workshop.png" alt="Training Workshop" class="gallery-img">
                 <img src="gallery-1.jpeg" alt="Globotech Event 1" class="gallery-img">
@@ -275,40 +631,52 @@
                 <img src="gallery-3.jpeg" alt="Globotech Event 3" class="gallery-img">
                 <img src="gallery-4.jpeg" alt="Globotech Event 4" class="gallery-img">
                 <img src="gallery-5.jpeg" alt="Globotech Event 5" class="gallery-img">
-                <img src="gallery-6.jpeg" alt="Globotech Event 6" class="gallery-img">
-                <img src="gallery-7.jpeg" alt="Globotech Event 7" class="gallery-img">
-                <img src="gallery-8.jpeg" alt="Globotech Event 8" class="gallery-img">
-                <img src="gallery-9.jpeg" alt="Globotech Event 9" class="gallery-img">
-                <img src="gallery-10.jpeg" alt="Globotech Event 10" class="gallery-img">
-                <img src="gallery-11.jpeg" alt="Globotech Event 11" class="gallery-img">
+                <img src="gallery-6.jpeg" alt="Globotech Event 6" class="gallery-img hidden-item">
+                <img src="gallery-7.jpeg" alt="Globotech Event 7" class="gallery-img hidden-item">
+                <img src="gallery-8.jpeg" alt="Globotech Event 8" class="gallery-img hidden-item">
+                <img src="gallery-9.jpeg" alt="Globotech Event 9" class="gallery-img hidden-item">
+                <img src="gallery-10.jpeg" alt="Globotech Event 10" class="gallery-img hidden-item">
+                <img src="gallery-11.jpeg" alt="Globotech Event 11" class="gallery-img hidden-item">
+            </div>
+            
+            <div class="text-center" style="margin-top: 3.5rem;">
+                <button id="gallery-view-more-btn" class="view-more-btn">
+                    <span>View More</span> <i class="fas fa-chevron-down"></i>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <!-- ==========================================================================
+         Get In Touch (Contact Block)
+         ========================================================================== -->
+    <section class="contact fade-in-section" id="contact">
         <div class="section-container">
             <div class="contact-info text-center">
                 <h2 class="section-title">Get in <span>Touch</span></h2>
+                
                 <div class="contact-details">
+                    <!-- Head Office -->
                     <div class="contact-item">
-                        <span class="contact-icon">📍</span>
+                        <div class="contact-icon"><i class="fas fa-map-marked-alt"></i></div>
                         <div>
                             <h4>Head Office</h4>
                             <p>Building No. 166, Dharmauli, Piprahi, Bhadkulwa, Paikauli Hata, Kushinagar, Uttar Pradesh – 274203</p>
                         </div>
                     </div>
+                    <!-- Contact Phone -->
                     <div class="contact-item">
-                        <span class="contact-icon">📞</span>
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
                         <div>
-                            <h4>Phone</h4>
+                            <h4>Phone Numbers</h4>
                             <p>+91 9196017815<br>+91 8382879537</p>
                         </div>
                     </div>
+                    <!-- Contact Email -->
                     <div class="contact-item">
-                        <span class="contact-icon">✉️</span>
+                        <div class="contact-icon"><i class="fas fa-envelope-open-text"></i></div>
                         <div>
-                            <h4>Email</h4>
+                            <h4>Email Address</h4>
                             <p>Globotech84@gmail.com</p>
                         </div>
                     </div>
@@ -317,48 +685,54 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ==========================================================================
+         Footer & Legal Information
+         ========================================================================== -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
                 <img src="logo.png" alt="Globotech Logo" class="footer-logo">
-                <p>Together We Empower Skills & Shape Futures</p>
+                <p>Empowering Skills, Shaping Futures. Certified technical training and ethical recruitment pipelines bridging gap between professional candidates and top global projects.</p>
                 <div class="social-links">
-                    <a href="https://whatsapp.com/channel/0029VbCcdwQ29754SeNYzi1p" target="_blank" aria-label="WhatsApp">📱</a>
-                    <a href="https://www.facebook.com/share/16qEwiYzCc/" target="_blank" aria-label="Facebook">📘</a>
-                    <a href="https://www.linkedin.com/in/globotech-talent-hub-private-limited-4416ba409" target="_blank" aria-label="LinkedIn">💼</a>
-                    <a href="https://www.instagram.com/globotech_talent_hub_pvt_ltd" target="_blank" aria-label="Instagram">📸</a>
-                    <a href="https://x.com/GlobotechTalent" target="_blank" aria-label="X">𝕏</a>
-                    <a href="https://youtube.com/@globotechtalenthubpvtltd" target="_blank" aria-label="YouTube">▶️</a>
+                    <a href="https://whatsapp.com/channel/0029VbCcdwQ29754SeNYzi1p" target="_blank" aria-label="Connect on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/16qEwiYzCc/" target="_blank" aria-label="Follow on Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/globotech-talent-hub-private-limited-4416ba409" target="_blank" aria-label="Connect on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/globotech_talent_hub_pvt_ltd" target="_blank" aria-label="Follow on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/GlobotechTalent" target="_blank" aria-label="Follow on X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://youtube.com/@globotechtalenthubpvtltd" target="_blank" aria-label="Subscribe on YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
+                <a href="#about">About Globotech</a>
+                <a href="#services">Manpower Services</a>
+                <a href="#training">Skill Training Programs</a>
+                <a href="#infrastructure">Our Facilities</a>
+                <a href="#leadership">Leadership Board</a>
+                <a href="#contact">Contact Support</a>
             </div>
         </div>
+        
         <div class="footer-bottom">
-            <div style="margin-bottom: 1rem; font-family: monospace; font-size: 0.85rem; opacity: 0.7; letter-spacing: 0.5px; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+            <div style="margin-bottom: 1.5rem; font-family: monospace; font-size: 0.85rem; opacity: 0.75; display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
                 <span><strong>CIN:</strong> U78100UP2025PTC223352</span>
                 <span><strong>GSTIN:</strong> 09AAMCG0332J1ZK</span>
                 <span><strong>MSME Reg:</strong> UP47 0039356</span>
                 <span><strong>Shop Est:</strong> UPSA60714044</span>
             </div>
-            <p>&copy; 2026 Globotech Talent Hub Pvt. Ltd. All rights reserved.</p>
+            <p>&copy; 2026 Globotech Talent Hub Pvt. Ltd. All rights reserved. Vetted and registered MEA Placement Agency.</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://whatsapp.com/channel/0029VbCcdwQ29754SeNYzi1p" class="floating-wa" target="_blank">
-        <svg viewBox="0 0 32 32" width="32" height="32" fill="white">
-            <path d="M16 2.5a13.5 13.5 0 00-11.4 20.8l-2.1 6.2 6.4-2a13.5 13.5 0 107.1-25zm0 2.2a11.3 11.3 0 018 19.3A11.3 11.3 0 016.7 18.2l-1.3 4 4.1-1.3a11.3 11.3 0 016.5-16.2z"/>
-            <path d="M12.2 10.3c-.3-.7-.6-.7-.8-.7h-.7c-.2 0-.6.1-.9.4-.3.3-1.1 1-1.1 2.5s1.2 2.9 1.3 3.1c.2.2 2.1 3.2 5.1 4.5 2 .8 2.8.9 3.8.7s2.5-1 2.8-2 .3-1.8.2-2c-.1-.2-.3-.3-.7-.5s-2.5-1.2-2.9-1.4-.6-.2-.9.2-1.1 1.4-1.3 1.6-.4.2-.8.1-1.8-.7-3.4-2.1c-1.2-1.1-2-2.5-2.2-2.9-.2-.4 0-.6.2-.8.2-.2.4-.4.6-.7.2-.2.3-.4.4-.7s0-.6-.1-.8c-.1-.3-.9-2.2-1.2-3.1z"/>
-        </svg>
+    <!-- ==========================================================================
+         WhatsApp Floating Connect Roundel
+         ========================================================================== -->
+    <a href="https://whatsapp.com/channel/0029VbCcdwQ29754SeNYzi1p" class="floating-wa" target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Custom Script Vetting -->
     <script src="script.js"></script>
 </body>
 </html>
